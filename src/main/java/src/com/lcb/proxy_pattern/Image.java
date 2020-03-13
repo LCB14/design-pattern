@@ -1,6 +1,6 @@
 package src.com.lcb.proxy_pattern;
 
 public interface Image {
-	
-	public void showImage();
+
+    public void showImage();
 }

@@ -1,5 +1,7 @@
 package src.com.lcb.com.lcb.adapter_pattern_imp;
-//接口适配器（可以很好的满足接口隔离原则）
+/**
+ * 接口适配器（可以很好的满足接口隔离原则）
+ */
 public class AdapterPattern {
 
 	public static void main(String[] args) {

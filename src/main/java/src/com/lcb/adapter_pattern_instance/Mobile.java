@@ -1,4 +1,5 @@
 package src.com.lcb.adapter_pattern_instance;
+
 public class Mobile {
     /**
      * 充电方法

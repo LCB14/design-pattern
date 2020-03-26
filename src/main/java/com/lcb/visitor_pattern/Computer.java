@@ -1,5 +1,8 @@
 package com.lcb.visitor_pattern;
 
+/**
+ * @author lichangbao
+ */
 public class Computer implements ComputerPart {
 
     ComputerPart[] parts;

@@ -1,5 +1,8 @@
 package com.lcb.visitor_pattern;
 
+/**
+ * @author lichangbao
+ */
 public class Keyboard implements ComputerPart {
 
     @Override

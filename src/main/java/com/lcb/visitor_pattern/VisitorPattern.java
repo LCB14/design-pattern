@@ -3,6 +3,8 @@ package com.lcb.visitor_pattern;
 /**
  * 访问者模式
  * 应用场景：org.springframework.web.servlet.DispatcherServlet#initStrategies
+ *
+ * @author lichangbao
  */
 public class VisitorPattern {
 

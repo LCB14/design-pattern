@@ -7,9 +7,7 @@ public class BaseDecorate implements Component {
 
     @Override
     public void operation() {
-
         System.out.println("待装饰者....");
-
     }
 
 }

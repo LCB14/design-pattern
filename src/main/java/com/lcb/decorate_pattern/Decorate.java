@@ -7,7 +7,9 @@ public class Decorate implements Component {
 
     private Component component;
 
-    //装饰器模式的核心部分
+    /**
+     * 装饰器模式的核心部分
+     */
     public void setComponent(Component component) {
 
         this.component = component;

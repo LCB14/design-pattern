@@ -3,12 +3,12 @@ package com.lcb.decorate_pattern;
 /**
  * 具体装饰对象
  */
-public class baseDecorate implements Component {
+public class BaseDecorate implements Component {
 
     @Override
     public void operation() {
 
-        System.out.println("待装饰对象....");
+        System.out.println("待装饰者....");
 
     }
 

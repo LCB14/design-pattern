@@ -17,13 +17,13 @@ public class DecoratePattern {
 
         System.out.println("第一种装扮：");
         Decorate decorateA = new DecorateStyleA();
-        decorateA.setComponent(person);
+        decorateA.wrapperComponent(person);
         decorateA.operation();
 
 
         System.out.println("第二种装扮：");
         Decorate decorateB = new DecorateStyleB();
-        decorateB.setComponent(person);
+        decorateB.wrapperComponent(person);
         decorateB.operation();
 
     }

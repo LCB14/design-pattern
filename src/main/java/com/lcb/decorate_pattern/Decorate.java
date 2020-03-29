@@ -11,7 +11,7 @@ public class Decorate implements Component {
     /**
      * 装饰器模式的核心部分
      */
-    public void setComponent(Component component) {
+    public void wrapperComponent(Component component) {
         this.component = component;
     }
 

@@ -3,7 +3,7 @@ package com.lcb.decorate_pattern;
 /**
  * 装饰模式
  * 特点：动态地给一个对象添加一些额外的职责，就增加功能来说，装饰模式比生成子类更为灵活。
- * 应用场景：Mybatis 缓存
+ * 应用场景：Mybatis sql 执行器 org.apache.ibatis.executor.Executor
  * @author lichangbao
  */
 public class DecoratePattern {

@@ -1,19 +1,21 @@
 package com.lcb.chain_of_responsibility_pattern;
 
 /**
- * 部门经理
+ * 总经理
+ *
+ * @author lichangbao
  */
-public class Bumenjingli extends Lingdao {
+public class GeneralManger extends AbstractLeader {
 
-    private final String name = "部门经理";
-    private final int level = 2;
+    private final String name = "总经理";
+    private final int level = 0;//最大
 
     @Override
-    public void chuli(Files file) {
+    public void handler(Files file) {
 
         if (this.level > file.getLevel()) {
             System.out.println(name + "未处理文件《" + file.getFileName() + "》");
-            getNextLingdao().chuli(file);
+            getNextLeader().handler(file);
         } else {
             System.out.println(name + "处理了文件《" + file.getFileName() + "》");
         }

@@ -4,17 +4,19 @@ package com.lcb.chain_of_responsibility_pattern;
  * 责任链模式（职责链模式）
  * 特点：使多个对象都有机会处理请求。
  * 应用场景：Netty 针对 handler 的处理过程。
+ *
+ * @author lichangbao
  */
 public class ChainOfResponsibilityPattern {
 
     public static void main(String[] args) {
 
         //定义职责链
-        Lingdao zongjingli = new Zongjingli();
-        Lingdao fujingli = new Fujingli();
-        Lingdao bumenjingli = new Bumenjingli();
-        bumenjingli.setNextLingdao(fujingli);
-        fujingli.setNextLingdao(zongjingli);
+        AbstractLeader zongjingli = new GeneralManger();
+        AbstractLeader fujingli = new AssistantManger();
+        AbstractLeader bumenjingli = new DivisionManger();
+        bumenjingli.setNextLeader(fujingli);
+        fujingli.setNextLeader(zongjingli);
 
         //定义两份文件
         Files f1 = new Files();
@@ -25,8 +27,8 @@ public class ChainOfResponsibilityPattern {
         f2.setLevel(0);
 
         //提交文件
-        bumenjingli.chuli(f1);
-        bumenjingli.chuli(f2);
+        bumenjingli.handler(f1);
+        bumenjingli.handler(f2);
     }
 
 }

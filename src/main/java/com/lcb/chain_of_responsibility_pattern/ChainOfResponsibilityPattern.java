@@ -3,6 +3,7 @@ package com.lcb.chain_of_responsibility_pattern;
 /**
  * 责任链模式（职责链模式）
  * 特点：使多个对象都有机会处理请求。
+ * 应用场景：Netty 针对 handler 的处理过程。
  */
 public class ChainOfResponsibilityPattern {
 

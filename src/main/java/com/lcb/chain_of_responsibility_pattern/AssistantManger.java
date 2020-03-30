@@ -8,6 +8,7 @@ package com.lcb.chain_of_responsibility_pattern;
 public class AssistantManger extends AbstractLeader {
 
     private final String name = "副经理";
+
     private final int level = 1;
 
     @Override

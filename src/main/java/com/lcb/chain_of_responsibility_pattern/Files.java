@@ -1,8 +1,18 @@
 package com.lcb.chain_of_responsibility_pattern;
 
+/**
+ * @author lichangbao
+ */
 public class Files {
 
+    /**
+     * 文件名称
+     */
     private String fileName;
+
+    /**
+     * 保密级别
+     */
     private int level;
 
     public String getFileName() {

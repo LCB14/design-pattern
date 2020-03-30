@@ -8,7 +8,11 @@ package com.lcb.chain_of_responsibility_pattern;
 public class GeneralManger extends AbstractLeader {
 
     private final String name = "总经理";
-    private final int level = 0;//最大
+
+    /**
+     * 最高级别
+     */
+    private final int level = 0;
 
     @Override
     public void handler(Files file) {

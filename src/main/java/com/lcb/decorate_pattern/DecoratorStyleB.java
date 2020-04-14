@@ -4,7 +4,7 @@ package com.lcb.decorate_pattern;
  * 装饰2
  * @author lichangbao
  */
-public class DecorateStyleB extends Decorate {
+public class DecoratorStyleB extends Decorator {
 
     @Override
     public void operation() {

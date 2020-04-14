@@ -4,7 +4,7 @@ package com.lcb.decorate_pattern;
  * 装饰器
  * @author lichangbao
  */
-public class Decorate implements Component {
+public class Decorator implements Component {
 
     private Component component;
 

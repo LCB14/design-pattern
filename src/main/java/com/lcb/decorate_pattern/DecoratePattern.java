@@ -15,11 +15,11 @@ public class DecoratePattern {
         // 待装饰对象
         Component person = new Person("孙少平");
 
-        Decorate decorateA = new DecorateStyleA();
+        Decorator decorateA = new DecoratorStyleA();
         decorateA.wrapperComponent(person);
 //        decorateA.operation();
 
-        Decorate decorateB = new DecorateStyleB();
+        Decorator decorateB = new DecoratorStyleB();
 //        decorateB.wrapperComponent(person);
         decorateB.wrapperComponent(decorateA);
         decorateB.operation();

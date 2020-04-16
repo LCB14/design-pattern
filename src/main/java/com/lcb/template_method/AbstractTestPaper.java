@@ -2,8 +2,10 @@ package com.lcb.template_method;
 
 /**
  * 模拟试卷
+ *
+ * @author lichangbao
  */
-public abstract class TestPaper {
+public abstract class AbstractTestPaper {
 
     public void test1() {
 

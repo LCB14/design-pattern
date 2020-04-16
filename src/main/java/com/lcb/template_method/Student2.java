@@ -2,24 +2,23 @@ package com.lcb.template_method;
 
 /**
  * 模拟student2获取试卷后的作答
+ *
+ * @author lichangbao
  */
-public class Student2 extends TestPaper {
+public class Student2 extends AbstractTestPaper {
 
     @Override
     public String Answer1() {
-        // TODO Auto-generated method stub
         return "b";
     }
 
     @Override
     public String Answer2() {
-        // TODO Auto-generated method stub
         return "a";
     }
 
     @Override
     public String Answer3() {
-        // TODO Auto-generated method stub
         return "c";
     }
 

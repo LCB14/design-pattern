@@ -3,6 +3,7 @@ package com.lcb.bridge_pattern;
 /**
  * 桥接模式（接口模式/柄体模式）
  * 特点：将变化部分抽象出来，使变化部分与主类分离。
+ * 应用场景：JDBC就是典型的桥接模式
  */
 public class BridgePattern {
 

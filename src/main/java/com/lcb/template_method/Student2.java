@@ -8,18 +8,21 @@ package com.lcb.template_method;
 public class Student2 extends AbstractTestPaper {
 
     @Override
-    public String Answer1() {
-        return "b";
+    public void realTest1() {
+        System.out.println("问题一");
+        System.out.println("B");
     }
 
     @Override
-    public String Answer2() {
-        return "a";
+    public void realTest2() {
+        System.out.println("问题二");
+        System.out.println("A");
     }
 
     @Override
-    public String Answer3() {
-        return "c";
+    public void realTest3() {
+        System.out.println("问题三");
+        System.out.println("C");
     }
 
 }

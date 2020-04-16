@@ -1,9 +1,10 @@
 package com.lcb.decorate_pattern;
 
 /**
- * 装饰模式
+ * 装饰模式：在不改变对象的基础上、将功能附加到对象上。（开闭原则最佳体现）
  * 特点：动态地给一个对象添加一些额外的职责，就增加功能来说，装饰模式比生成子类更为灵活。
- * 应用场景：Mybatis sql 执行器 org.apache.ibatis.executor.Executor
+ * 应用场景：Mybatis 的执行器 org.apache.ibatis.executor.Executor
+ *
  * @author lichangbao
  */
 public class DecoratePattern {
@@ -15,13 +16,9 @@ public class DecoratePattern {
         // 待装饰对象
         Component person = new Person("孙少平");
 
-        Decorator decorateA = new DecoratorStyleA();
-        decorateA.wrapperComponent(person);
-//        decorateA.operation();
+        Component decorateA = new BaseDecoratorStyleA(person);
+        Component decorateB = new BaseDecoratorStyleB(decorateA);
 
-        Decorator decorateB = new DecoratorStyleB();
-//        decorateB.wrapperComponent(person);
-        decorateB.wrapperComponent(decorateA);
         decorateB.operation();
 
     }

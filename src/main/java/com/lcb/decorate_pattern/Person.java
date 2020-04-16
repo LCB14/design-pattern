@@ -15,7 +15,7 @@ public class Person implements Component {
 
     @Override
     public void operation() {
-        System.out.println("待装饰者:" + name);
+        System.out.println("待装饰者:" + name + "，" + "目前处于裸奔状态！");
     }
 
 }

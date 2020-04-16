@@ -20,6 +20,7 @@ public class TemplateMethodPattern {
         abstractTestPaper1.realTest1();
         abstractTestPaper1.realTest2();
         abstractTestPaper1.realTest3();
+
         System.out.println("-----------------------");
 
         //学生2的作答

@@ -1,19 +1,19 @@
 package com.lcb.composite_pattern;
+
 /**
- * 
- * 模拟avi文件
- * 
- * */
-public class AVIFile extends File{
-	
-    public AVIFile(String name) {
-    	
+ * 模拟text文件
+ *
+ * @author lichangbao
+ */
+public class TxtBaseFile extends BaseFile {
+
+    public TxtBaseFile(String name) {
         this.name = name;
     }
 
     @Override
     public void showFileName() {
-    	
         System.out.println(this.name);
     }
+
 }

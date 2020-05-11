@@ -1,6 +1,9 @@
 package com.lcb.observer_pattern;
 
+/**
+ * @author lichangbao
+ */
 public interface Observer {
 	
-	void update(Observable o, Object args);
+	void update(AbstractObservable o, Object args);
 }

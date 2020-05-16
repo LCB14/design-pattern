@@ -2,6 +2,7 @@ package com.lcb.adapter_pattern_class;
 
 /**
  * 待适配的类
+ * @author lichangbao
  */
 public class Voltage220 {
 
